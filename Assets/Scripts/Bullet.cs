@@ -15,7 +15,6 @@ public class Bullet : MonoBehaviour
     {
         if(gameObject!=null && !isPlay && collision.gameObject.tag != "Cnnon")
         {
-            Debug.Log("Play!");
             audioSource.Play();
         }
         

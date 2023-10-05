@@ -5,7 +5,7 @@ using UnityEngine;
 public class Breakable : MonoBehaviour
 {
     [SerializeField] GameObject _replacement;
-    float _breakeFroce = 2f;
+    float _breakeFroce = 5f;
     float _collMult = 100f;
     bool isBroken;
 

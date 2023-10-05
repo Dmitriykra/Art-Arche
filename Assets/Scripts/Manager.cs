@@ -42,6 +42,7 @@ public class Manager : MonoBehaviour
 
     public void RestartGame()
     {
+        isPlayble = false;
         SceneManager.LoadScene(0);
     }
 }
