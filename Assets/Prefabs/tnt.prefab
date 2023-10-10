@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 2396355066276207369}
   - component: {fileID: 2115681710100672055}
   - component: {fileID: 2115681710100672056}
-  - component: {fileID: 6918227424495120004}
+  - component: {fileID: 2282537259559179861}
   m_Layer: 0
   m_Name: tnt
   m_TagString: Untagged
@@ -470,8 +470,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9e9ecb3eefb547e795fc9c38a05bc09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerForce: 0.2
+  triggerForce: 2
   particles: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b, type: 3}
+  _audioSource: {fileID: 2282537259559179861}
+  meshRenderers:
+  - {fileID: 3724347712129714532}
+  - {fileID: 4315706147247513002}
+  - {fileID: 4194556712238908367}
+  - {fileID: 3752309332720301966}
+  - {fileID: 648099284572193540}
+  - {fileID: 988089678892237529}
+  - {fileID: 8846973437734121077}
+  - {fileID: 2354879591842417426}
+  manager: {fileID: 2538780815809391670, guid: 5c0ccc980fbe34dfc8f0527d5e426236, type: 3}
 --- !u!54 &2115681710100672055
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -501,7 +512,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 8, y: 6, z: 8}
   m_Center: {x: 0, y: -1.7, z: 0}
---- !u!82 &6918227424495120004
+--- !u!82 &2282537259559179861
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -519,7 +530,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 26
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

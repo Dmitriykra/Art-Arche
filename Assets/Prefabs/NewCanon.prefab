@@ -524,6 +524,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  moveSpeed: 500
+  manager: {fileID: 0}
 --- !u!1 &5390268024857578273
 GameObject:
   m_ObjectHideFlags: 0

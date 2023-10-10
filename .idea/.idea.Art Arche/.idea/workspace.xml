@@ -13,7 +13,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Constants.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BulletCreator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Funny Conveyer/Assets/Scripts/GameState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Funny Conveyer/Assets/Scripts/GameState.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -22,8 +22,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Constants.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MenuManagerScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BulletCreator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Explosion.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Explosion.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Cannon.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tnt.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2TQ5EnnNzsUdRbQy0asosuFOehS" />
@@ -36,6 +39,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -97,7 +102,10 @@
       <workItem from="1691396441230" duration="2632000" />
       <workItem from="1696409812839" duration="2738000" />
       <workItem from="1696491915105" duration="59000" />
-      <workItem from="1696491993016" duration="3936000" />
+      <workItem from="1696491993016" duration="4370000" />
+      <workItem from="1696835103552" duration="5398000" />
+      <workItem from="1696842543003" duration="3922000" />
+      <workItem from="1696923432469" duration="4719000" />
     </task>
     <servers />
   </component>

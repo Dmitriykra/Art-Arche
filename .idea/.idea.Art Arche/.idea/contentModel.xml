@@ -131,6 +131,7 @@
           <e p="BulletCreator.cs" t="Include" />
           <e p="Cannon.cs" t="Include" />
           <e p="Constants.cs" t="Include" />
+          <e p="Explosion.cs" t="Include" />
           <e p="Manager.cs" t="Include" />
           <e p="MenuManagerScript.cs" t="Include" />
           <e p="Tnt.cs" t="Include" />

@@ -9,10 +9,13 @@ public class Tnt : MonoBehaviour
     private float explosionRadius = 5f;
     private float explosionForce = 600f;
     [SerializeField] private GameObject particles;
-    private AudioSource _audioSource;
+    public AudioSource _audioSource;
+    public MeshRenderer[] meshRenderers;
+    public Manager manager;
 
     private void Start()
     {
+        meshRenderers = GetComponentsInChildren<MeshRenderer>();
         _audioSource = GetComponent<AudioSource>();
     }
 
@@ -20,7 +23,11 @@ public class Tnt : MonoBehaviour
     {
         if (other.relativeVelocity.magnitude >= triggerForce)
         {
-            _audioSource.Play();
+            if (!_audioSource.isPlaying)
+            {
+                playSound();
+            }
+            
             
             var surraundingObj = Physics.OverlapSphere(
                 transform.position, explosionRadius);
@@ -33,9 +40,25 @@ public class Tnt : MonoBehaviour
             }
             
             var boom = Instantiate(particles, transform.position, Quaternion.identity);
-            Destroy(gameObject); 
+            //Destroy(gameObject); 
             Destroy(boom, 1f); 
 
         }
+    }
+
+    void playSound()
+    {
+        manager.DecreaseTntCount(1);
+        
+        for(int i = 0; i < meshRenderers.Length; i++)
+        {
+            meshRenderers[i].enabled = false;
+        }
+        
+        _audioSource.Play();
+
+        Destroy(gameObject, 1.5f);
+        
+        
     }
 }

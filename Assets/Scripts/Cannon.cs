@@ -14,7 +14,8 @@ public class Cannon : MonoBehaviour
     public bool youCanFire = true;
     [SerializeField] AnimationCurve curve;
     float horizontalMove;
-    float moveSpeed = 500f;
+    public float moveSpeed = 10f;
+    public Manager manager;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,7 @@ public class Cannon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButton(0) && !isFired)
+        if(Input.GetMouseButton(0) && !isFired && manager.isPlayble)
         {
             horizontalMove = Input.GetAxis("Mouse X");
         } else
